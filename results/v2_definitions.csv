@@ -1,0 +1,100 @@
+instruction,category,predicted,seconds,correct
+where to notify of problems with sign-up?,ACCOUNT,ACCOUNT,3.6989435001742095,True
+wanna  use the {{Account Type}} profile help me,ACCOUNT,ACCOUNT,0.17402000003494322,True
+I cannot retrieve the bloody PIN code of my profile,ACCOUNT,FEEDBACK,0.2731916250195354,False
+give me information about the deletion of my {{Account Type}} account,ACCOUNT,ACCOUNT,0.12377845915034413,True
+i need assistance changing to the {{Account Type}} account,ACCOUNT,ACCOUNT,0.14759816695004702,True
+watn assistance removing a standard account,ACCOUNT,ACCOUNT,0.1159293339587748,True
+I have to report signup issues,ACCOUNT,ACCOUNT,0.09977729199454188,True
+i dont know what to do to notify of an issue with a sign-up,ACCOUNT,ORDER,0.1232089998666197,False
+help me use the {{Account Type}} profile,ACCOUNT,ACCOUNT,0.1310144590679556,True
+i need help to see the early termination penalty,CANCEL,CANCEL,0.1314141668844968,True
+I do not know how to check the cancellation  penalties,CANCEL,CANCEL,0.14938624994829297,True
+how can i check the withdrawal penalty,CANCEL,REFUND,0.14566304092295468,False
+I need assistance seeing the early termination penalties,CANCEL,CANCEL,0.11006687488406897,True
+how to see the cancellation fees?,CANCEL,CANCEL,0.11538787512108684,True
+need help seeing the fucking withdrawal charge,CANCEL,PAYMENT,0.12712883297353983,False
+show withdrawal fees,CANCEL,PAYMENT,0.12383095896802843,False
+want help seeing the early termination fee,CANCEL,CANCEL,0.09900104207918048,True
+I can't find the cancellation charges,CANCEL,CANCEL,0.0996364161837846,True
+see what hours i can reach customer service,CONTACT,CONTACT,0.10518545797094703,True
+i have to speak with a bloody human agent,CONTACT,CONTACT,0.15231870813295245,True
+need  help to talk with a person,CONTACT,CONTACT,0.10770512511953712,True
+"I don't understand you, I want help contacting a human agent",CONTACT,CONTACT,0.1254307080525905,True
+"you arenot being helpful at all, I want to speak to a person",CONTACT,CONTACT,0.1268828329630196,True
+contact agent,CONTACT,CONTACT,0.09437529114075005,True
+direct to me a person,CONTACT,CONTACT,0.09944670810364187,True
+assistance talking with an agent,CONTACT,CONTACT,0.095873833168298,True
+I am trying to call customer support,CONTACT,CONTACT,0.09680445794947445,True
+I have to check what shipment methods you offer,DELIVERY,DELIVERY,0.12625683285295963,True
+I want help seeing when will my item arrive,DELIVERY,DELIVERY,0.12704562488943338,True
+what are the available shipment options?,DELIVERY,DELIVERY,0.12438437482342124,True
+can I place an ordewr from {{Delivery Country}}?,DELIVERY,DELIVERY,0.15311016608029604,True
+I want help seeing how soonj can I expect my parcel,DELIVERY,DELIVERY,0.15156020782887936,True
+want assistance checking how soon can I expect my parcel,DELIVERY,DELIVERY,0.15830808319151402,True
+can you help me to check what delivery options I have?,DELIVERY,DELIVERY,0.1582698340062052,True
+is it possible to place an order from {{Delivery Country}}?,DELIVERY,DELIVERY,0.15213875006884336,True
+where could I see what options for delivery I have?,DELIVERY,DELIVERY,0.15836404217407107,True
+I need to leave some fedeback about a product,FEEDBACK,FEEDBACK,0.18619449995458126,True
+leaving review for a service,FEEDBACK,FEEDBACK,0.15482304198667407,True
+is there an address to leave an opinion ?,FEEDBACK,FEEDBACK,0.15777650009840727,True
+how can i file a consumre claim against ur organization,FEEDBACK,FEEDBACK,0.2110140840522945,True
+I am calling to lodge a claim against your organization,FEEDBACK,FEEDBACK,0.1970598332118243,True
+would it be possible to file a damn customer reclamation?,FEEDBACK,FEEDBACK,0.1917188330553472,True
+"I want to file a customer reclamation, can I get some help?",FEEDBACK,FEEDBACK,0.18007225007750094,True
+I'm trying to make a  customer claim against ur company,FEEDBACK,FEEDBACK,0.1888247919268906,True
+help to send some feedback for a product,FEEDBACK,FEEDBACK,0.15177995897829533,True
+help to get my bills from {{Person Name}},INVOICE,FEEDBACK,0.15599379083141685,False
+check invoices from eleven months ago,INVOICE,INVOICE,0.13982095895335078,True
+look for my damn bill from {{Person Name}},INVOICE,FEEDBACK,0.20219508395530283,False
+is it possible to download my damn invoices from {{Person Name}},INVOICE,FEEDBACK,0.18183145904913545,False
+gedtting bill from {{Person Name}},INVOICE,FEEDBACK,0.15226370794698596,False
+I do not know wht I have to do to get my invoice #85632,INVOICE,ORDER,0.13057462498545647,False
+looking for invoice from {{Person Name}},INVOICE,FEEDBACK,0.15331658301874995,False
+I do not know how to download the bill #12588,INVOICE,INVOICE,0.15150416688993573,True
+ser the bill #37777,INVOICE,INVOICE,0.12503291689790785,True
+"I want to edit order {{Order Number}}, help me",ORDER,ORDER,0.13152695819735527,True
+can you help me to cancel purchase {{Order Number}}?,ORDER,ORDER,0.1319432919844985,True
+how to check the current status of order {{Order Number}}?,ORDER,ORDER,0.12326958402991295,True
+I want assistance to purchase a few of your item,ORDER,ORDER,0.13322991714812815,True
+help with deleting some items from my last order,ORDER,ORDER,0.13179666711948812,True
+assistance earning an item,ORDER,ORDER,0.0961815828923136,True
+how can I order some products?,ORDER,ORDER,0.09792479197494686,True
+"I have to switch an article of order {{Order Number}}, help me",ORDER,ORDER,0.12788770790211856,True
+makepurchase,ORDER,ORDER,0.09822308411821723,True
+"I want to check the payment modalities, I need  help",PAYMENT,PAYMENT,0.15052795899100602,True
+check allowed payment methods,PAYMENT,PAYMENT,0.12345854216255248,True
+is it possible to see your available payment methods?,PAYMENT,PAYMENT,0.15767179196700454,True
+could ya help me to solve an issue with payments,PAYMENT,PAYMENT,0.1588748749345541,True
+my card was declined i wanna inform of troubles with payment,PAYMENT,PAYMENT,0.1584944580681622,True
+how can i inform of problems with online payment,PAYMENT,PAYMENT,0.1579778748564422,True
+want assistance checking your available payment modalities,PAYMENT,PAYMENT,0.12742879195138812,True
+i want assistance to list the payment methods,PAYMENT,PAYMENT,0.1267632911913097,True
+"the payment did not go through, report an error",PAYMENT,PAYMENT,0.15858670813031495,True
+assistance to see in which cases can I ask to be reimbursed,REFUND,REFUND,0.1499747079797089,True
+i exepct a compensation of {{Currency Symbol}}{{Refund Amount}},REFUND,REFUND,0.1528120411094278,True
+"I want to check my restitution status, I need help",REFUND,REFUND,0.15859758318401873,True
+i dont know how to check the current status of my rebate,REFUND,ORDER,0.12211945815943182,False
+I want to see in what cases can I request my money back,REFUND,REFUND,0.15108991600573063,True
+I'm trying to check how long reimbursements take,REFUND,REFUND,0.1574924581218511,True
+I need help seeing your reimbursement policy,REFUND,REFUND,0.12633470818400383,True
+reimbusre {{Currency Symbol}}{{Refund Amount}},REFUND,REFUND,0.15899820812046528,True
+I have got to know if there are any news on my compensation,REFUND,FEEDBACK,0.1755032918881625,False
+I cannot change the addreas,SHIPPING,ORDER,0.10085695912130177,False
+need supports trying to modify my delivery address,SHIPPING,DELIVERY,0.12513641617260873,False
+I am trying to submit a new shipping address,SHIPPING,DELIVERY,0.1577448749449104,False
+I have a problem trying to change the delivery address,SHIPPING,DELIVERY,0.15872470778413117,False
+"I entered a wrong address by mistake, could I update it?",SHIPPING,DELIVERY,0.18737695878371596,False
+I have a question about an address correction,SHIPPING,ORDER,0.12474662507884204,False
+I want assistance trying to change my shipping address,SHIPPING,DELIVERY,0.1477227918803692,False
+"I want to correct the shipping address, can you help me?",SHIPPING,SHIPPING,0.18141583283431828,True
+"I entered a wrong address, how do I update it?",SHIPPING,DELIVERY,0.17281241598539054,False
+can you tell me about the subscription to your newsletter?,SUBSCRIPTION,SUBSCRIPTION,0.17208612500689924,True
+see the status of my subscription to ur newsleyter,SUBSCRIPTION,SUBSCRIPTION,0.17431820882484317,True
+how to unsubscribe from ur corporate newsletter,SUBSCRIPTION,SUBSCRIPTION,0.18350233300589025,True
+"I want to unsubscribe to your newsletter, I need help",SUBSCRIPTION,SUBSCRIPTION,0.17907733307220042,True
+would it be possible to receive the newsletter?,SUBSCRIPTION,SUBSCRIPTION,0.1264994170051068,True
+can I cancel my subscription to the corporate newsletter?,SUBSCRIPTION,SUBSCRIPTION,0.1604433748871088,True
+i want help tol subscribe to ur newsletter,SUBSCRIPTION,SUBSCRIPTION,0.12657262501306832,True
+I do not know how I can receive the company newsletter,SUBSCRIPTION,SUBSCRIPTION,0.15815779217518866,True
+i dont know how to sign up to the newsletter,SUBSCRIPTION,SUBSCRIPTION,0.15788170788437128,True

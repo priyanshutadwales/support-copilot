@@ -1,0 +1,7 @@
+ollama
+chromadb
+datasets
+pandas
+scikit-learn
+streamlit
+jupyter
