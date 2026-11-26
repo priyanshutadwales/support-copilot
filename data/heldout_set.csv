@@ -1,0 +1,16 @@
+message,type,expected_action,expected_category
+wanna give an quick look at my bill #37777 i need assistance,in_scope,REPLY,INVOICE
+I want help to edit my address,in_scope,REPLY,SHIPPING
+I do not know how to earn a few of your item,in_scope,REPLY,ORDER
+i dont know how i can report damn issues with payments,in_scope,REPLY,PAYMENT
+I need to file a customer claim against your business,in_scope,REPLY,FEEDBACK
+what is your customer service phone number?,in_scope,REPLY,CONTACT
+pls help i cant find my reciept anywhere,messy,REPLY,INVOICE
+how do i chnage my delivry adress,messy,REPLY,SHIPPING
+whats the fee if i cancel now,messy,REPLY,CANCEL
+can you recommend a good restaurant near me,off_topic,DECLINE,
+explain how black holes work,off_topic,DECLINE,
+my zara order never arrived,other_company,DECLINE,
+how do i reset my instagram password,other_company,DECLINE,
+i was charged 3 times and i'm reporting this to my bank as fraud,sensitive,ESCALATE,
+"this is a joke, 2 weeks waiting, i want my money back AND an apology",sensitive,ESCALATE,

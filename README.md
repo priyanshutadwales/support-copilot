@@ -1,3 +1,23 @@
+## v2: evaluating the whole copilot (not just routing)
+A 40-message eval set with the expected behaviour written in advance, in five types: in-scope tickets, messy (typos), off-topic, other companies, and sensitive (angry, legal, fraud). Three actions: **REPLY**, **DECLINE** (polite fixed message, no human needed) and **ESCALATE** (human).
+
+| Version | What changed | Eval set | Notes |
+|---|---|---|---|
+| v2_0 | v1 pipeline | 62% | Typos treated as off-topic; long replies blocked; other companies answered |
+| v2_1–2_3 | Relaxed threshold, length retry, scope check | 75% → 50% | Each fix worked alone but removed an accidental safety net: sensitive dropped to 40% |
+| v2_4–2_5 | Few-shot checks, keyword safety net, whole-word matching | 82% → 88% | Found substring bugs ("sue" inside "issue"); 3B model kept trading one error for another |
+| v2_6 | Same prompts, qwen2.5:7b | 95% | Bigger model fixed what prompt tweaks couldn't |
+| v2_7 | Placeholder whitelist from the knowledge base | **98%** | Only {{...}} variables that exist nowhere in the KB count as invented |
+
+**Held-out test (15 new messages, never used for tuning):** qwen2.5:7b **87%**, llama3.2:3b **93%** (a one-message difference, so within noise). **100% on sensitive, off-topic and other-company messages**, with zero dangerous errors: every failure was either too cautious or caused by garbled data. About 3 s per message on a laptop.
+
+**Lessons:**
+- Re-run the whole eval after every change: fixes can quietly break other behaviour.
+- Not all errors cost the same: answering a legal threat is worse than escalating a normal question.
+- Parse LLM output strictly and match keywords as whole words.
+- Know when to stop prompt-tweaking: if fixes keep moving the problem, try a better model.
+- Tuning on the same test inflates the score (98% vs 87–93% held-out). Report the held-out number.
+
 # 🎧 Support Copilot
 
 An AI customer-support copilot that **routes** tickets, **answers** them from approved replies (RAG), and **escalates** to a human when it shouldn't answer. Runs fully locally with Llama 3.2 3B via Ollama.
@@ -36,7 +56,8 @@ Customer message
 ## Limitations (honest notes)
 - The Bitext dataset is templated and cleaner than real tickets; expect lower accuracy on real customer messages.
 - The 0.39 retrieval-distance threshold was tuned on a small sample.
-- Requests about other companies (e.g. Amazon) are not detected yet (v2).
+- Complaints phrased as "a claim against your business" are sometimes declined as off-topic (seen in both test sets); planned fix in v3 with new test messages.
+- Eval sets are small (40 + 15 messages); differences of one or two messages are within noise.
 - Claims not supported by the sources (e.g. "the steps I provided earlier") are not caught yet. Next: an LLM-as-judge groundedness check.
 
 ## Run it locally

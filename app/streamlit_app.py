@@ -2,12 +2,13 @@ import time
 
 import streamlit as st
 
+import copilot
 from copilot import handle
 
 st.set_page_config(page_title="Support Copilot", page_icon="🎧")
 st.title("🎧 Support Copilot")
-st.caption("Routes customer messages, answers from approved replies, and escalates to a human "
-           "when unsure. Runs locally with Llama 3.2 3B via Ollama.")
+st.caption(f"Routes customer messages, answers from approved replies, politely declines off-topic "
+           f"requests, and escalates to a human when needed. Runs locally with {copilot.MODEL} via Ollama.")
 
 message = st.text_area("Customer message",
                        placeholder="e.g. I was charged twice for my order and want my money back")
@@ -25,6 +26,9 @@ if st.button("Handle message", type="primary") and message.strip():
 
     if result["action"] == "REPLY":
         st.success("✅ Automated reply")
+        st.write(result["reply"])
+    elif result["action"] == "DECLINE":
+        st.info(f"🙅 Politely declined: {result['reason']}")
         st.write(result["reply"])
     else:
         st.warning(f"🙋 Escalated to a human agent: {result['reason']}")

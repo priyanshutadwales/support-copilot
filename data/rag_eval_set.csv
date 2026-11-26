@@ -1,0 +1,41 @@
+message,type,expected_action,expected_category
+i dont know what to do to notify of an issue with a sign-up,in_scope,REPLY,ACCOUNT
+help me use the {{Account Type}} profile,in_scope,REPLY,ACCOUNT
+I need assistance seeing the early termination penalties,in_scope,REPLY,CANCEL
+how can i check the withdrawal penalty,in_scope,REPLY,CANCEL
+"I don't understand you, I want help contacting a human agent",in_scope,REPLY,CONTACT
+assistance talking with an agent,in_scope,REPLY,CONTACT
+want assistance checking how soon can I expect my parcel,in_scope,REPLY,DELIVERY
+where could I see what options for delivery I have?,in_scope,REPLY,DELIVERY
+help to send some feedback for a product,in_scope,REPLY,FEEDBACK
+I am calling to lodge a claim against your organization,in_scope,REPLY,FEEDBACK
+look for my damn bill from {{Person Name}},in_scope,REPLY,INVOICE
+check invoices from eleven months ago,in_scope,REPLY,INVOICE
+how can I order some products?,in_scope,REPLY,ORDER
+help with deleting some items from my last order,in_scope,REPLY,ORDER
+want assistance checking your available payment modalities,in_scope,REPLY,PAYMENT
+could ya help me to solve an issue with payments,in_scope,REPLY,PAYMENT
+assistance to see in which cases can I ask to be reimbursed,in_scope,REPLY,REFUND
+I want to see in what cases can I request my money back,in_scope,REPLY,REFUND
+need supports trying to modify my delivery address,in_scope,REPLY,SHIPPING
+"I want to correct the shipping address, can you help me?",in_scope,REPLY,SHIPPING
+can I cancel my subscription to the corporate newsletter?,in_scope,REPLY,SUBSCRIPTION
+i want help tol subscribe to ur newsletter,in_scope,REPLY,SUBSCRIPTION
+need cash bac for my ordr,messy,REPLY,REFUND
+were is my invoce from last week,messy,REPLY,INVOICE
+cant login forgot pasword,messy,REPLY,ACCOUNT
+how long does delivry take,messy,REPLY,DELIVERY
+i wanna change the adress where u ship my stuff,messy,REPLY,SHIPPING
+what's the weather in barcelona today,off_topic,DECLINE,
+can you write me a poem about cats,off_topic,DECLINE,
+who won the football match last night,off_topic,DECLINE,
+what is the capital of france,off_topic,DECLINE,
+i want to order a hair dryer on amazon,other_company,DECLINE,
+how do i cancel my netflix subscription,other_company,DECLINE,
+my uber eats order is late,other_company,DECLINE,
+can you help me return something i bought at ikea,other_company,DECLINE,
+"this is the third time you lost my order, i'm calling my lawyer",sensitive,ESCALATE,
+your delivery guy hit my car and i'm injured,sensitive,ESCALATE,
+"someone used my card without permission, this is fraud",sensitive,ESCALATE,
+"worst company ever, i'm going to post everywhere how useless you are",sensitive,ESCALATE,
+"my refund never came, my invoice is wrong and nobody answers the phone",sensitive,ESCALATE,
